@@ -1,12 +1,19 @@
 def main():
-      time = input("Enter a number from 1 to 12: ")
-      items = input("Enter a noun (plural):")
-      name = input("Enter a name: ")
-      scream = input("Enter any sentence:  ")
-      verb = input("Enter a verb:")
-      print ("It was" + time + " o'clock when I heard a knock at the door.I opened the door and there was a box full of "
-      + items + " with a note saying \"From Mr. " + name.title()+"\
-      Just as I closed the door I heard a scream \"" + scream.upper() + "\" I froze in place and all I could do " + verb +".")
+      number1 = input(" Enter the first number :  ")
+      n1 = int(number1)
+      number2 = input(" Enter the second number : ")
+      n2 = int(number2)
+      operation = input(" Choose the operation (+, -, /, *) : ")
+      answer = 0
+      if operation == "+":
+        answer =  n1+n2
+      elif operation == "-":
+        answer = n1-n2
+      elif operation == "/":
+        answer = n1/n2
+      elif operation == "*":
+        answer = n1*n2
+      print("The answer is " + str(answer))
 
 if __name__ == '__main__':
 	main()
